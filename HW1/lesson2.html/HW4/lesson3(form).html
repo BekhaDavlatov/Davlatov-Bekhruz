@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .form-section {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .form-section h2 {
+            margin-top: 0;
+        }
+
+        .form-section label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-section input,
+        .form-section select,
+        .form-section textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        .form-section input[type="checkbox"] {
+            width: auto;
+        }
+
+        .form-section button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .form-section button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Форма заявки на работу в зоопарке</h1>
+    <p>Пожалуйста, заполните форму. Обязательные поля помечены <span style="color: red;">*</span></p>
+
+    <form>
+        <!-- Контактная информация -->
+        <div class="form-section">
+            <h2>Контактная информация</h2>
+            <label for="name">Имя <span style="color: red;">*</span></label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Телефон</label>
+            <input type="text" id="phone" name="phone">
+
+            <label for="email">Email <span style="color: red;">*</span></label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <!-- Персональная информация -->
+        <div class="form-section">
+            <h2>Персональная информация</h2>
+            <label for="age">Возраст <span style="color: red;">*</span></label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="gender">Пол</label>
+            <select id="gender" name="gender">
+                <option value="female">Женщина</option>
+                <option value="male">Мужчина</option>
+                <option value="other">Другой</option>
+            </select>
+
+            <label for="qualities">Перечислите личные качества</label>
+            <textarea id="qualities" name="qualities" rows="4"></textarea>
+        </div>
+
+        <!-- Выбор любимых животных -->
+        <div class="form-section">
+            <h2>Выберите ваших любимых животных</h2>
+            <label><input type="checkbox" name="animals" value="zebra"> Зебра</label>
+            <label><input type="checkbox" name="animals" value="lion"> Лев</label>
+            <label><input type="checkbox" name="animals" value="elephant"> Слон</label>
+            <label><input type="checkbox" name="animals" value="cat"> Кошка</label>
+            <label><input type="checkbox" name="animals" value="antelope"> Антилопа</label>
+            <label><input type="checkbox" name="animals" value="anaconda"> Анаконда</label>
+            <label><input type="checkbox" name="animals" value="pigeon"> Голубь</label>
+            <label><input type="checkbox" name="animals" value="crab"> Краб</label>
+            <label><input type="checkbox" name="animals" value="human"> Человек</label>
+        </div>
+
+        <button type="submit">Отправить информацию</button>
+    </form>
+    <!-- В этом коде:
+
+Используются теги <form>, <input>, <label>, <select>, <textarea>, <button> для создания формы.
+Применяется CSS для стилизации различных секций формы.
+Обязательные поля помечены звездочкой (<span style="color: red;">*</span>).
+Текстовое поле, числовое поле, селектор и чекбоксы используются для ввода данных.
+Кнопка отправки формы стилизована и изменяет цвет при наведении.-->
+</body>
+
+</html>
