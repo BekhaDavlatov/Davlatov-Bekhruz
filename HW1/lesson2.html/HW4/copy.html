@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Form.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Форма заявки на работу в зоопарке</h1>
+    <div class="italic">Пожалуста заполните форму. Обязательные поля помечены<span style="color: red;">*</span></div>
+    <form>
+        <fieldset class="headform">
+            <legend>Контактная информация</legend>
+            <div><label for="login">Логин <span style="color: red;"> *</span></label>
+                <input type="text" required id="login" name="login" style="margin-left: 20%;">
+            </div><br>
+            <div><label for="phone">Телефон </label>
+                <input type="tel" name="phone" required id="phone" style="margin-left: 18%;">
+            </div><br>
+            <div><label for="email">Email <span style="color: red;"> *</span></label>
+                <input type="email" name="email" required id="email" style="margin-left: 20%;">
+            </div>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset class="personaldata">
+            <legend>Персональная Информация</legend>
+            <div><label for="age">Возраст<span style="color: red;">*</span></label></div>
+            <div><input type="number" required id="date" name="date" style="margin-left: 20%;"></div>
+            <div><label for="gander" required id="gender" type="text" class="gender">Пол</label>
+                <select name="gender" id="gender">
+                    <option value="femail">Женский</option>
+                    <option value="male">Мужской</option>
+                    <option value="others">Другой</option>
+                </select><br><br>
+            </div>
+            <div><label for="comment">Перечислите <br>личные <br>качества</label></div>
+            <textarea name="comment" id="comment" cols="40" rows="10"></textarea>
+        </fieldset>
+        <fieldset class="animals">
+            <legend>выберите выших любимых животных</legend>
+            <label><input type="checkbox" checked name="zebra">Зебра</label>
+            <label><input type="checkbox" checked name="elephan">Слон</label>
+            <label><input type="checkbox" chacked name="cat">Кошак</label>
+            <label><input type="checkbox" chacked name="antelope">Антелопа</label>
+            <label><input type="checkbox" chacked name="anaconda">Анаконда</label>
+            <label><input type="checkbox" chacked name="pigeon">Голубь</label>
+            <label><input type="checkbox" chacked name="human">Человек</label>
+            <label><input type="checkbox" checked name="crab">Краб</label>
+        </fieldset>
+        <label><input class="button" type="submit" value="Отправить информацию"></button></label>
+    </form>
+
+</body>
+
+</html>
