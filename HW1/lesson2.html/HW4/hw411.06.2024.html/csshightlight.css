@@ -1,0 +1,19 @@
+h1 {
+    color: orange;
+    font-size: 36px;
+    font-family: Arial, sans-serif;
+    margin-right: 100px;
+}
+
+.hightlight-green{
+    background-color: lime;
+    color:black;
+    font-weight: bold;
+    font-style: italic;
+
+}
+.hightlight-red{
+    color:red;
+    font-size: 26px;
+    font-family: Times New Roman, serif;
+}
