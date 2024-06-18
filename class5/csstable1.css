@@ -1,0 +1,15 @@
+table {
+    border-spacing: 0;
+}
+
+td {
+    border-bottom: 2px solid grey;
+    padding: 5px 15px;
+    margin: 0;
+}
+tr:nth-child(even){
+    background-color: rgb(71, 240, 217);
+}
+td:nth-child(2n+3){
+    background-color: rgb(241, 135, 86);
+}

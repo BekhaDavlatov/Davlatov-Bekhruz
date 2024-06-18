@@ -1,0 +1,5 @@
+div{
+    width: 300px;
+    border: 5px solid #EE8129;
+    border-radius: 6px
+}
